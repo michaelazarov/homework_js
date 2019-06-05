@@ -9,6 +9,7 @@ body {
  max-width: 800px;
  margin: 10px auto;
  font-family: sans-serif;
+ 
 }
 
 .section {
@@ -29,6 +30,10 @@ body {
  border-bottom-color: grey;
  border-bottom-style: solid;
  border-bottom-width: 1px;
+ position: fixed;
+ top: 0;
+ z-index: 1;
+ background-color: grey;
 
 }
 
@@ -54,14 +59,62 @@ h2 {
 }
 
 .img-block {
+ margin-top: 80px;
  width: 100%;
  height: 100%;
  height: inherit;
  display: flex;
  justify-content: space-around;
+ 
 }
 
 .img1,
 .img2 {
  width: 50%;
+ position: relative;
+
 }
+.background {
+ background-color: rgba(211, 211, 211,0.5);
+ transition-duration: 2s;
+ position: absolute;
+ left: 0px;
+ right: 0px;
+ top: 0px;
+ bottom: 0px;
+}
+.background:hover,
+.pre-block:hover{
+ background-color: rgba(256, 256, 256,0);
+ cursor: pointer;
+ transition-duration: 2s;
+}
+.pre-block {
+ margin-top: 20px;
+ width: 100%;
+ height: 100%;
+ height: inherit;
+ display: flex;
+ flex-direction: column;
+ background-color: rgba(211, 211, 211,0.5);
+ transition-duration: 2s;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
