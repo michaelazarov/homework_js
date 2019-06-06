@@ -59,6 +59,18 @@ numbers[i] >= 50 ? console.log(numbers[i]): numbers[i]
 i--
 }
     </pre>
+   <pre class="pre-block">
+    Вариант 4 
+var numbers = [ 254, 115, 78, 25, 91, 45, 37 ]
+var i = numbers.length
+function getNumFromDim(numbers, i){
+	numbers[i] >= 50 ? console.log(numbers[i]): 0
+	i--
+	if (i >= 0) getNumFromDim(numbers, i) 
+	else return 0
+}
+getNumFromDim(numbers, i)   
+    </pre>    
    </div>
   </main>
  </section>
